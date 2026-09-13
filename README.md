@@ -2,6 +2,9 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=DNA%20Sequencing%20%26%20Gene%20Family%20Classification&fontSize=28&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Comparative%20Analysis%20using%20Machine%20Learning%20and%20Deep%20Learning%20Architectures&descAlignY=58&descSize=15" width="100%"/>
 
+<h1 align="center">🧬 DNA Sequencing &amp; Gene Family Classification</h1>
+<p align="center"><i>Comparative Analysis using Machine Learning and Deep Learning Architectures</i></p>
+
 <img src="https://img.shields.io/badge/Python-3.9%2B-8B5CF6.svg?style=for-the-badge&logo=python&logoColor=white&labelColor=1a1a2e"/>
 <img src="https://img.shields.io/badge/PyTorch-2.0%2B-7C3AED.svg?style=for-the-badge&logo=pytorch&logoColor=white&labelColor=1a1a2e"/>
 <img src="https://img.shields.io/badge/scikit--learn-1.2%2B-6D28D9.svg?style=for-the-badge&logo=scikit-learn&logoColor=white&labelColor=1a1a2e"/>
