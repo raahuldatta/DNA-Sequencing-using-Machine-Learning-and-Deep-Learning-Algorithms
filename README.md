@@ -163,7 +163,7 @@ Each sequence is transformed into a space-delimited string of hexamer "words". N
 <summary><b>View all fixes applied to the original research notebook</b></summary>
 <br/>
 
-1. **Eliminated Hardcoded Absolute Windows Paths** — Fixed `D:\VIT\Capstone\Review2\...` paths in `DNA.ipynb` to portable relative file paths.
+1. **Eliminated Hardcoded Absolute Windows Paths** — Fixed paths in `DNA.ipynb` to portable relative file paths.
 2. **Replaced Broken / Expired GitHub Remote URLs** — Replaced fragile remote `requests.get()` downloads containing expired GitHub tokens with robust local dataset readers.
 3. **Fixed Confusion Matrix Overwrite Bug** — Fixed a variable reuse issue where `sns_plot` was not reassigned for Chimpanzee and Dog, causing the Human matrix to be repeatedly saved as `cm chimp.png` and `cm dog.png`. Corrected tick labels from binary `[0, 1]` to all 7 classes (`0..6`).
 4. **Resolved Statistical Methodology Issues** — Replaced cherry-picked `max(accuracy)` across folds with standard **Mean ± Std Stratified 5-Fold Cross Validation**.
