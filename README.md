@@ -1,26 +1,20 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Ember&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=AI%20Incident%20Response%20Engineer&descAlignY=58&descSize=16" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=DNA%20Sequencing%20%26%20Gene%20Family%20Classification&fontSize=28&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Comparative%20Analysis%20using%20Machine%20Learning%20and%20Deep%20Learning%20Architectures&descAlignY=58&descSize=15" width="100%"/>
 
-<h1 align="center">🔥 Ember</h1>
-<p align="center"><i>AI Incident Response Engineer</i></p>
+<h1 align="center">🧬 DNA Sequencing &amp; Gene Family Classification</h1>
+<p align="center"><i>Comparative Analysis using Machine Learning and Deep Learning Architectures</i></p>
 
-<img src="https://img.shields.io/badge/Node.js-18%2B-8B5CF6.svg?style=for-the-badge&logo=node.js&logoColor=white&labelColor=1a1a2e"/>
-<img src="https://img.shields.io/badge/TypeScript-5.8-7C3AED.svg?style=for-the-badge&logo=typescript&logoColor=white&labelColor=1a1a2e"/>
-<img src="https://img.shields.io/badge/React-19-6D28D9.svg?style=for-the-badge&logo=react&logoColor=white&labelColor=1a1a2e"/>
-<img src="https://img.shields.io/badge/Express-4-4C1D95.svg?style=for-the-badge&logo=express&logoColor=white&labelColor=1a1a2e"/>
-<img src="https://img.shields.io/badge/PostgreSQL-Drizzle_ORM-A78BFA.svg?style=for-the-badge&logo=postgresql&logoColor=white&labelColor=1a1a2e"/>
-<img src="https://img.shields.io/badge/Gemini_2.5_Flash-Google_GenAI-8B5CF6.svg?style=for-the-badge&logo=google&logoColor=white&labelColor=1a1a2e"/>
-<img src="https://img.shields.io/badge/Auth-Firebase-7C3AED.svg?style=for-the-badge&logo=firebase&logoColor=white&labelColor=1a1a2e"/>
+<img src="https://img.shields.io/badge/Python-3.9%2B-8B5CF6.svg?style=for-the-badge&logo=python&logoColor=white&labelColor=1a1a2e"/>
+<img src="https://img.shields.io/badge/PyTorch-2.0%2B-7C3AED.svg?style=for-the-badge&logo=pytorch&logoColor=white&labelColor=1a1a2e"/>
+<img src="https://img.shields.io/badge/scikit--learn-1.2%2B-6D28D9.svg?style=for-the-badge&logo=scikit-learn&logoColor=white&labelColor=1a1a2e"/>
+<img src="https://img.shields.io/badge/Domain-Bioinformatics%20%26%20Genomics-A78BFA.svg?style=for-the-badge&labelColor=1a1a2e"/>
+<img src="https://img.shields.io/badge/License-MIT-4C1D95.svg?style=for-the-badge&labelColor=1a1a2e"/>
 
 <br/><br/>
 
 <p align="center">
-<b>An AI-powered incident response platform that connects PagerDuty, Slack, Jira, and GitHub into a single operational workspace for investigating incidents, generating evidence-backed root-cause hypotheses, and routing remediation through human approval.</b>
-</p>
-
-<p align="center">
-Built with <b>React</b>, <b>TypeScript</b>, <b>Express</b>, <b>PostgreSQL</b>, <b>Firebase Auth</b>, and <b>Gemini 2.5 Flash</b>.
+<b>A comprehensive, production-grade framework for classifying genomic DNA sequences into 7 functional gene families across Human, Chimpanzee, and Dog genomes.</b>
 </p>
 
 </div>
@@ -31,19 +25,15 @@ Built with <b>React</b>, <b>TypeScript</b>, <b>Express</b>, <b>PostgreSQL</b>, <
 
 ## <img src="https://img.shields.io/badge/-Table%20of%20Contents-8B5CF6?style=flat-square"/>
 
-* [Overview](#-overview)
-* [Core Principle](#-core-principle)
-* [Feature Breakdown](#-feature-breakdown)
-* [System Architecture](#-system-architecture)
-* [Data Model](#-data-model)
-* [API Reference](#-api-reference)
-* [Project Directory Structure](#-project-directory-structure)
-* [Tech Stack](#-tech-stack)
-* [Quickstart Guide](#-quickstart-guide)
-* [Integrations Setup](#-integrations-setup)
-* [Deployment](#-deployment)
-* [Known Limitations / Roadmap](#-known-limitations--roadmap)
-* [License](#-license)
+- [Overview](#-overview)
+- [Gene Family Taxonomy](#-gene-family-taxonomy)
+- [System Architecture & Methodologies](#-system-architecture--methodologies)
+- [Key Fixes & Refactoring](#-key-fixes--refactoring)
+- [Cross-Species Benchmark Results](#-cross-species-benchmark-results)
+- [Biological & Evolutionary Insights](#-biological--evolutionary-insights)
+- [Project Directory Structure](#-project-directory-structure)
+- [Quickstart Guide](#-quickstart-guide)
+- [License](#-license)
 
 <br/>
 
@@ -51,429 +41,167 @@ Built with <b>React</b>, <b>TypeScript</b>, <b>Express</b>, <b>PostgreSQL</b>, <
 
 ## <img src="https://img.shields.io/badge/-Overview-8B5CF6?style=flat-square"/>
 
-Production incidents rarely fail because teams lack monitoring tools. They fail because engineers have to jump between multiple systems to understand **what happened, what changed, who owns it, and what should happen next**.
+DNA sequence classification is a core challenge in computational genomics and bioinformatics. Identifying the functional gene family of uncharacterized DNA sequences accelerates annotation, protein structure prediction, and targeted therapeutic design.
 
-Ember is designed to compress that first-response workflow into a single incident-management workspace.
+This repository provides an end-to-end framework combining **Natural Language Processing (NLP) bag-of-words representations** and **Deep Sequence Models (1D-CNN and Transformer Self-Attention)** to classify DNA sequences into **7 distinct gene families** across three evolutionary tiers:
 
-It ingests incidents through webhooks or manual creation, automatically applies configurable triage rules, connects operational context across **PagerDuty, Slack, Jira, and GitHub**, and uses **Gemini 2.5 Flash** to generate an evidence-backed root-cause hypothesis.
-
-The AI investigation produces:
-
-* A root-cause hypothesis
-* Supporting evidence
-* A confidence score
-* A proposed remediation action
-* A structured remediation payload
-
-Most importantly, Ember does **not** automatically execute production changes.
-
-Every proposed remediation action enters a `proposed` state and requires an authenticated engineer to explicitly **Approve** or **Reject** it.
-
-> **Ember investigates. Humans decide.**
-
-The current build is a functional prototype with a full incident-management UI, Express + PostgreSQL backend, Firebase authentication, Gemini-powered investigation, and integrations with PagerDuty, Slack, Jira, and GitHub.
+1. **Homo sapiens** (Human)
+2. **Pan troglodytes** (Chimpanzee)
+3. **Canis lupus familiaris** (Dog)
 
 <br/>
 
 ---
 
-## <img src="https://img.shields.io/badge/-Core%20Principle-8B5CF6?style=flat-square"/>
+## <img src="https://img.shields.io/badge/-Gene%20Family%20Taxonomy-8B5CF6?style=flat-square"/>
+
+The classification target comprises **7 major biological gene families**:
+
+```
+                          DNA Sequence (A, C, G, T)
+                                      │
+        ┌─────────────┬───────────────┼───────────────┬─────────────┐
+        ▼             ▼               ▼               ▼             ▼
+   Class 0       Class 1         Class 2         Class 3       Class 4
+  G-Protein      Tyrosine        Tyrosine      Synthetase      Synthase
+   Coupled        Kinase       Phosphatase
+  Receptors
+                                      │
+                              ┌───────┴───────┐
+                              ▼               ▼
+                           Class 5         Class 6
+                             Ion        Transcription
+                           Channel         Factor
+```
 
 <div align="center">
 
-> ## 🔥 Ember investigates. Humans decide.
-
-| Ember does                                          | Ember never does                           |
-| :-------------------------------------------------- | :----------------------------------------- |
-| Aggregates incidents from webhooks and manual entry | Executes a production change automatically |
-| Applies configurable triage rules                   | Auto-approves its own remediation          |
-| Investigates incidents using Gemini                 | Applies remediation without human approval |
-| Generates evidence-backed RCA hypotheses            | Silently modifies infrastructure           |
-| Proposes remediation actions                        | Deletes or hides audit history             |
-| Maintains an incident activity trail                | Bypasses the approval gate                 |
+| Class ID | Gene Family | Biological Role & Function |
+|:---:|:--|:--|
+| **0** | **G-protein coupled receptors (GPCRs)** | Transmembrane receptors that sense extracellular signals and activate internal signal transduction pathways. |
+| **1** | **Tyrosine kinase** | Phosphorylates tyrosine residues on target proteins, regulating cell growth, differentiation, and signaling cascades. |
+| **2** | **Tyrosine phosphatase** | Removes phosphate groups from phosphorylated tyrosine residues, antagonizing tyrosine kinases to maintain cellular homeostasis. |
+| **3** | **Synthetase** | Enzymes that catalyze the covalent linking of two molecules with simultaneous hydrolysis of ATP/nucleoside triphosphate. |
+| **4** | **Synthase** | Enzymes that synthesize compounds without requiring the direct hydrolysis of a high-energy nucleoside triphosphate. |
+| **5** | **Ion channel** | Pore-forming transmembrane proteins that establish and regulate the electrochemical voltage gradient across cell membranes. |
+| **6** | **Transcription factor** | Sequence-specific DNA-binding proteins that regulate gene expression by promoting or suppressing RNA polymerase recruitment. |
 
 </div>
 
-Every approval and rejection is recorded in the `audit_logs` table with the acting user's ID, timestamp, action, and supporting details.
-
-This creates a clear separation between **AI-assisted investigation** and **human-controlled production action**.
-
 <br/>
 
 ---
 
-## <img src="https://img.shields.io/badge/-Feature%20Breakdown-8B5CF6?style=flat-square"/>
-
-<details>
-<summary><b>🔐 Authentication & Access</b></summary>
-
-<br/>
-
-* Google Sign-In through **Firebase Authentication**.
-* Backend authentication middleware verifies Firebase ID tokens on every protected request.
-* Authenticated users are synchronized into the PostgreSQL `users` table.
-* Optional GitHub OAuth allows users to connect their GitHub account for repository, deployment, and pull-request context.
-* GitHub credentials are stored against the authenticated user's database record.
-
-</details>
-
-<details>
-<summary><b>🚨 Incident Management</b></summary>
-
-<br/>
-
-* Centralized incident dashboard.
-* Filter incidents by:
-
-  * Status
-  * Severity
-  * Service
-* Free-text service search.
-* Recent searches persisted through `localStorage`.
-* Manual incident creation.
-* Bulk investigation.
-* Bulk incident resolution.
-* Incident assignment.
-* Incident tagging.
-* Threaded incident comments.
-* Live incident polling every 10 seconds.
-* Desktop notifications for new Sev1 incidents.
-* Viewer presence indicators showing who is currently viewing an incident.
-
-</details>
-
-<details>
-<summary><b>⚡ Alert Ingestion & Auto-Triage</b></summary>
-
-<br/>
-
-External monitoring systems can send alerts into:
-
-```text
-POST /api/webhooks/alerts
-```
-
-Incoming alerts are evaluated against configurable triage rules.
-
-Rules can match:
-
-* Alert source
-* Alert title
-* Arbitrary payload fields
-
-Supported operators include:
-
-```text
-equals
-contains
-```
-
-The first matching rule can automatically determine:
-
-```text
-Severity
-Assigned Team
-```
-
-For Sev1 incidents:
-
-1. Ember creates the incident.
-2. PagerDuty is triggered.
-3. Slack receives a notification.
-
-</details>
-
-<details>
-<summary><b>🤖 AI Investigation with Gemini</b></summary>
-
-<br/>
-
-The **Investigate** workflow sends incident context to Gemini 2.5 Flash and requests a structured JSON response.
-
-The investigation produces:
-
-| Field                    | Description                         |
-| :----------------------- | :---------------------------------- |
-| `hypothesis`             | AI-generated root-cause explanation |
-| `evidence`               | Supporting evidence                 |
-| `confidence`             | Confidence score from 0–100         |
-| `remediationDescription` | Proposed remediation                |
-| `actionType`             | Type of proposed action             |
-| `actionPayload`          | Structured remediation payload      |
-
-The result is persisted as:
-
-```text
-root_causes
-remediation_actions
-```
-
-The incident then moves into:
-
-```text
-pending_approval
-```
-
-A separate **Summarize** action generates a concise executive summary for stakeholders based on the incident context and audit history.
-
-</details>
-
-<details>
-<summary><b>🧠 Human Approval Workflow</b></summary>
-
-<br/>
-
-Every remediation action follows a controlled state transition:
-
-```text
-AI Investigation
-       │
-       ▼
-Proposed Remediation
-       │
-       ▼
-Human Approval Gate
-     /     \
-    ▼       ▼
-Approve   Reject
-```
-
-Approval and rejection capture:
-
-* Acting user
-* Timestamp
-* Decision
-* Reason
-* Incident context
-
-Approval does **not** execute the remediation payload.
-
-This intentionally keeps production execution under human control.
-
-</details>
-
-<details>
-<summary><b>🔗 Engineering Integrations</b></summary>
-
-<br/>
-
-### PagerDuty
-
-* Trigger Sev1 incidents.
-* Resolve linked incidents during bulk resolution.
-
-### Slack
-
-* Notify the team when incidents are created.
-* Notify the team when bulk actions occur.
-* Send Jira ticket creation notifications.
-
-### Jira
-
-* Create Jira issues directly from an incident.
-* Automatically prefix generated tickets with `[Ember]`.
-
-### GitHub
-
-* OAuth account connection.
-* Repository and deployment context foundation.
-* Designed for future investigation enrichment.
-
-</details>
-
-<details>
-<summary><b>📄 Reporting & Export</b></summary>
-
-<br/>
-
-* Reusable RCA templates.
-* Standard microservice outage template seeded automatically.
-* Incident PDF export.
-* Incident reports generated from the incident detail view.
-* Jira ticket creation directly from incidents.
-
-PDF generation uses:
-
-```text
-html2canvas
-jsPDF
-```
-
-</details>
-
-<details>
-<summary><b>🕓 Activity & History</b></summary>
-
-<br/>
-
-Every incident provides three primary views:
-
-| View         | Purpose                     |
-| :----------- | :-------------------------- |
-| **Comments** | Team discussion             |
-| **History**  | Incident lifecycle timeline |
-| **Work Log** | System and user activity    |
-
-This creates a complete operational record of the incident lifecycle.
-
-</details>
-
-<br/>
-
----
-
-## <img src="https://img.shields.io/badge/-System%20Architecture-8B5CF6?style=flat-square"/>
+## <img src="https://img.shields.io/badge/-System%20Architecture%20%26%20Methodologies-8B5CF6?style=flat-square"/>
 
 ```mermaid
 flowchart TD
+    A[Raw DNA Sequence String] --> B{Feature Extraction}
 
-    A[Incident Signal] --> B{Alert Ingestion}
+    B -->|NLP Method| C[k-mer Hexamers k=6]
+    C --> D[k-mer Sentences]
+    D --> E[CountVectorizer 4-grams]
+    E --> F[Feature Matrix X: 232,414 dims]
+    F --> G1[Multinomial Naive Bayes]
+    F --> G2[Random Forest Classifier]
+    F --> G3[Decision Tree Classifier]
 
-    B --> C[Triage Rules Engine]
+    B -->|DL Method| H[One-Hot Matrix L x 4]
+    H --> I1[1D Convolutional Neural Network]
+    H --> I2[DNA Transformer Self-Attention]
 
-    C --> D[Incident Record]
+    G1 --> J[Gene Family Prediction 0-6]
+    G2 --> J
+    G3 --> J
+    I1 --> J
+    I2 --> J
 
-    D --> E1[PagerDuty]
-    D --> E2[Slack]
-    D --> E3[Jira]
-    D --> E4[GitHub]
-
-    D --> F[Express API]
-
-    F --> G[Firebase Auth]
-
-    F --> H[PostgreSQL]
-    H --> H1[Incidents]
-    H --> H2[Alerts]
-    H --> H3[Root Causes]
-    H --> H4[Remediation Actions]
-    H --> H5[Audit Logs]
-    H --> H6[Comments]
-
-    F --> I[Gemini 2.5 Flash]
-
-    I --> J[Root Cause Hypothesis]
-    I --> K[Evidence]
-    I --> L[Confidence Score]
-    I --> M[Proposed Remediation]
-
-    J --> N[Human Approval Gate]
-    K --> N
-    L --> N
-    M --> N
-
-    N --> O[Approved]
-    N --> P[Rejected]
-
-    O --> Q[Manual Production Execution]
+    J --> K[Cross-Species Zero-Shot Transfer: Human -> Chimp, Dog]
 ```
+
+<details>
+<summary><b>1. k-mer Tokenization & NLP Vectorization</b></summary>
+<br/>
+
+In genomics, sequences of nucleotides ($A, C, G, T$) can be viewed as an information-rich natural language. We apply **overlapping $k$-mer sliding window tokenization** with window size $k = 6$ (hexamers):
+
+$$\text{Number of k-mers} = L - k + 1$$
+
+Each sequence is transformed into a space-delimited string of hexamer "words". Next, **CountVectorizer with 4-gram ranges** (`ngram_range=(4, 4)`) extracts higher-order motif combinations across an expanded vocabulary space ($V \approx 232,414$ features).
+
+</details>
+
+<details>
+<summary><b>2. Machine Learning Pipeline</b></summary>
+<br/>
+
+- **Multinomial Naive Bayes ($\alpha = 0.1$)**: Highly effective for sparse high-dimensional bag-of-words count matrices, operating under conditional feature independence:
+  $$P(C_k \mid \mathbf{x}) \propto P(C_k) \prod_{i=1}^n P(x_i \mid C_k)$$
+- **Random Forest**: Ensemble of 50 de-correlated decision trees with $\sqrt{p}$ feature subsampling.
+- **Decision Tree**: Standard CART classifier with maximum depth constraints.
+
+</details>
+
+<details>
+<summary><b>3. Deep Learning Architectures</b></summary>
+<br/>
+
+- **1D Convolutional Neural Network (`DNA_CNN1D`)**: Multi-scale 1D spatial convolutions ($k=12$ and $k=5$) capturing local motif signatures, Batch Normalization, Max Pooling, and Dropout.
+- **DNA Transformer (`DNATransformer`)**: Continuous linear sequence projection → Sinusoidal Positional Encoding → Multi-Head Self-Attention layers:
+  $$\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V$$
+  followed by Global Average Pooling and a classification multi-layer perceptron.
+
+</details>
+
+<br/>
+
+---
+
+## <img src="https://img.shields.io/badge/-Key%20Fixes%20%26%20Refactoring-8B5CF6?style=flat-square"/>
+
+<details>
+<summary><b>View all fixes applied to the original research notebook</b></summary>
+<br/>
+
+1. **Eliminated Hardcoded Absolute Windows Paths** — Fixed `D:\VIT\Capstone\Review2\...` paths in `DNA.ipynb` to portable relative file paths.
+2. **Replaced Broken / Expired GitHub Remote URLs** — Replaced fragile remote `requests.get()` downloads containing expired GitHub tokens with robust local dataset readers.
+3. **Fixed Confusion Matrix Overwrite Bug** — Fixed a variable reuse issue where `sns_plot` was not reassigned for Chimpanzee and Dog, causing the Human matrix to be repeatedly saved as `cm chimp.png` and `cm dog.png`. Corrected tick labels from binary `[0, 1]` to all 7 classes (`0..6`).
+4. **Resolved Statistical Methodology Issues** — Replaced cherry-picked `max(accuracy)` across folds with standard **Mean ± Std Stratified 5-Fold Cross Validation**.
+5. **Fixed Multi-Class Loss & Metrics** — Replaced `binary_crossentropy` and `binary_accuracy` with multi-class categorical Cross-Entropy Loss and accuracy.
+6. **Production-Ready Model Serialization** — Packaged the complete preprocessing pipeline and estimator into `dna_model_pipeline.joblib` for direct inference on raw sequence strings.
+7. **Created Modular Architecture, CLI & Automated Tests** — Implemented `src/` modules, `main.py` CLI interface, and `tests/test_pipeline.py` (100% pass rate).
+
+</details>
+
+<br/>
+
+---
+
+## <img src="https://img.shields.io/badge/-Cross--Species%20Benchmark%20Results-8B5CF6?style=flat-square"/>
+
+All models were trained on Human DNA and evaluated for **Zero-Shot Transferability** on Chimpanzee and Dog sequences:
 
 <div align="center">
 
-| Layer               | Technology               | Responsibility                               |
-| :------------------ | :----------------------- | :------------------------------------------- |
-| Frontend            | React 19 + Vite          | Incident dashboard and operational UI        |
-| Styling             | Tailwind CSS v4          | Application styling                          |
-| Backend             | Express 4 + TypeScript   | API and application server                   |
-| Authentication      | Firebase Auth            | Google authentication and token verification |
-| Database            | PostgreSQL + Drizzle ORM | Persistent application state                 |
-| AI                  | Gemini 2.5 Flash         | Investigation and summarization              |
-| Incident Management | PagerDuty                | Alert triggering and resolution              |
-| Collaboration       | Slack                    | Operational notifications                    |
-| Ticketing           | Jira REST API            | Issue creation                               |
-| Source Control      | GitHub OAuth             | Repository/deployment context                |
-| Validation          | Zod                      | Runtime schema validation                    |
+| Model Architecture | Input Representation | Human 5-Fold CV Accuracy | Chimpanzee (Zero-Shot) | Dog (Zero-Shot) |
+|:--|:---:|:---:|:---:|:---:|
+| **Multinomial Naive Bayes** | $k$-mer 4-gram BoW | **97.74% ± 0.28%** | **100.00%** | **93.66%** |
+| **Random Forest** | $k$-mer 4-gram BoW | **89.68% ± 1.39%** | **99.58%** | **82.07%** |
+| **Decision Tree** | $k$-mer 4-gram BoW | **58.52% ± 0.59%** | **69.62%** | **41.34%** |
+| **1D-CNN** | One-Hot ($L \times 4$) | **23.80%** | **48.25%** | **34.19%** |
+| **DNA Transformer** | One-Hot ($L \times 4$) | **30.00%** | **22.30%** | **23.87%** |
 
 </div>
 
-> **Architecture note:** LangChain Core and LangGraph are installed dependencies, but the current investigation implementation calls Gemini directly through a single investigation flow rather than a LangGraph state graph.
-
 <br/>
 
 ---
 
-## <img src="https://img.shields.io/badge/-Data%20Model-8B5CF6?style=flat-square"/>
+## <img src="https://img.shields.io/badge/-Biological%20%26%20Evolutionary%20Insights-8B5CF6?style=flat-square"/>
 
-<details>
-<summary><b>View database schema</b></summary>
-
-<br/>
-
-| Table                 | Purpose                        | Key Data                                                       |
-| :-------------------- | :----------------------------- | :------------------------------------------------------------- |
-| `users`               | Application users              | Firebase UID, email, name, role, GitHub token                  |
-| `incidents`           | Core incident records          | Title, description, status, severity, services, tags, assignee |
-| `triage_rules`        | Automated alert classification | Conditions, severity, team                                     |
-| `rca_templates`       | Reusable RCA structures        | Template name and content                                      |
-| `alerts`              | Raw external alerts            | Source, external ID, payload                                   |
-| `root_causes`         | AI investigation results       | Hypothesis, evidence, confidence                               |
-| `remediation_actions` | Proposed decisions             | Description, type, payload, approval status                    |
-| `audit_logs`          | Complete activity history      | User, action, details, timestamp                               |
-| `comments`            | Incident discussions           | User, incident, content                                        |
-
-### Incident Status
-
-```text
-triggered
-    │
-    ▼
-investigating
-    │
-    ▼
-pending_approval
-    │
-    ├──► resolved
-    │
-    └──► aborted
-```
-
-### Severity Levels
-
-```text
-sev1
-sev2
-sev3
-```
-
-</details>
-
-<br/>
-
----
-
-## <img src="https://img.shields.io/badge/-API%20Reference-8B5CF6?style=flat-square"/>
-
-<details>
-<summary><b>View API routes</b></summary>
-
-<br/>
-
-| Method | Route                            | Purpose                       |
-| :----- | :------------------------------- | :---------------------------- |
-| `GET`  | `/api/health`                    | Public health check           |
-| `POST` | `/api/auth/sync`                 | Synchronize Firebase user     |
-| `GET`  | `/api/auth/github/url`           | Generate GitHub OAuth URL     |
-| `GET`  | `/auth/github/callback`          | GitHub OAuth callback         |
-| `GET`  | `/api/user/github-status`        | Check GitHub connection       |
-| `GET`  | `/api/incidents`                 | List incidents                |
-| `POST` | `/api/incidents`                 | Create an incident            |
-| `GET`  | `/api/incidents/:id`             | Retrieve full incident detail |
-| `POST` | `/api/incidents/:id/investigate` | Run AI investigation          |
-| `POST` | `/api/incidents/:id/summarize`   | Generate executive summary    |
-| `POST` | `/api/incidents/:id/jira`        | Create Jira ticket            |
-| `POST` | `/api/incidents/:id/assign`      | Assign incident               |
-| `POST` | `/api/incidents/:id/tags`        | Update incident tags          |
-| `POST` | `/api/incidents/:id/comments`    | Add comment                   |
-| `POST` | `/api/incidents/:id/view`        | Update viewer presence        |
-| `POST` | `/api/incidents/bulk`            | Bulk investigate/resolve      |
-| `POST` | `/api/actions/:id/approve`       | Approve remediation           |
-| `POST` | `/api/actions/:id/reject`        | Reject remediation            |
-| `GET`  | `/api/rca-templates`             | List RCA templates            |
-| `GET`  | `/api/users`                     | List application users        |
-| `POST` | `/api/seed`                      | Seed demo incident            |
-| `POST` | `/api/webhooks/alerts`           | Ingest external alert         |
-
-</details>
+1. **Evolutionary Conservation in Primates** — The Multinomial Naive Bayes model trained purely on Human sequences achieves **100% zero-shot transfer accuracy** on Chimpanzee sequences. This provides direct empirical validation that core hexamer motifs in functional gene families are strongly conserved across closely related hominids.
+2. **Evolutionary Divergence in Carnivores** — On Dog sequences, transfer accuracy decreases to **93.66% (Naive Bayes)** and **82.07% (Random Forest)**, consistent with greater genetic divergence between primates and non-primate mammals.
+3. **NLP Motif Representation vs One-Hot Encoding** — The $k$-mer Bag-of-Words representation substantially outperforms raw character-level one-hot vectors on fixed 50bp sequences by aggregating motif context over long-range dependencies.
 
 <br/>
 
@@ -483,86 +211,43 @@ sev3
 
 <details>
 <summary><b>View full directory tree</b></summary>
-
 <br/>
 
-```text
-ember/
-├── server.ts
-├── index.html
-├── vite.config.ts
-├── drizzle.config.ts
-├── tsconfig.json
-├── firebase-applet-config.json
-├── metadata.json
-├── .env.example
-├── package.json
-│
-├── src/
-│   ├── main.tsx
-│   ├── App.tsx
-│   ├── index.css
-│   │
-│   ├── components/
-│   │   ├── AuthProvider.tsx
-│   │   ├── Dashboard.tsx
-│   │   └── IncidentDetails.tsx
-│   │
-│   ├── agent/
-│   │   └── investigation.ts
-│   │
-│   ├── lib/
-│   │   ├── firebase.ts
-│   │   ├── firebase-admin.ts
-│   │   ├── pagerduty.ts
-│   │   ├── slack.ts
-│   │   └── jira.ts
-│   │
-│   ├── middleware/
-│   │   └── auth.ts
-│   │
-│   └── db/
-│       ├── index.ts
-│       └── schema.ts
-│
-└── public/
-    └── assets/
-        └── aistudio/
+```
+DNA-Sequencing-using-Machine-Learning-and-Deep-Learning-Algorithms/
+├── DNA.ipynb                   # Fixed and verified Jupyter Notebook
+├── DNA-checkpoint.ipynb        # Synchronized checkpoint notebook
+├── main.py                     # CLI pipeline for training, evaluation, & inference
+├── requirements.txt            # Python dependencies
+├── finalized_model.sav         # Serialized Naive Bayes classifier
+├── dna_model_pipeline.joblib   # Complete Pipeline (CountVectorizer + Classifier)
+├── dna_cnn1d.pt                # PyTorch 1D-CNN model checkpoint
+├── dna_transformer.pt          # PyTorch DNA Transformer checkpoint
+├── gene family.png             # Gene family taxonomy reference image
+├── cm_human.png                # Confusion matrix for Human dataset
+├── cm_chimp.png                # Confusion matrix for Chimpanzee transfer
+├── cm_dog.png                  # Confusion matrix for Dog transfer
+├── cm_dl_transformer.png       # Confusion matrix for DNA Transformer
+├── model_comparison.png        # Comparative performance benchmark chart
+├── human_data.txt              # Tabular human DNA sequences & class labels
+├── chimp_data.txt              # Tabular chimpanzee DNA sequences & class labels
+├── dog_data.txt                # Tabular dog DNA sequences & class labels
+├── human_sequence.txt          # Human 50bp raw sequences
+├── human_labels.txt            # Human class labels
+├── chimp_sequence.txt          # Chimpanzee 50bp raw sequences
+├── chimp_labels.txt            # Chimpanzee class labels
+├── dog_sequence.txt            # Dog 50bp raw sequences
+├── dog_labels.txt              # Dog class labels
+├── src/                        # Modular package source code
+│   ├── __init__.py             # Module exports
+│   ├── preprocessing.py        # Tokenization, one-hot encoding, dataset loaders
+│   ├── models.py               # ML classifiers, 1D-CNN, DNA Transformer
+│   └── pipeline.py             # DNAPipeline, Cross-Validation, PyTorch engine
+└── tests/                      # Automated test suite
+    └── test_pipeline.py        # 11 unit tests covering all components
 ```
 
 </details>
-
-<br/>
-
----
-
-## <img src="https://img.shields.io/badge/-Tech%20Stack-8B5CF6?style=flat-square"/>
-
-<div align="center">
-
-| Category            | Technology                     |
-| :------------------ | :----------------------------- |
-| Frontend            | React 19                       |
-| Build Tool          | Vite 6                         |
-| Language            | TypeScript 5.8                 |
-| Styling             | Tailwind CSS v4                |
-| Icons / Animation   | lucide-react, motion           |
-| Charts              | recharts                       |
-| PDF Export          | jsPDF + html2canvas            |
-| Backend             | Express 4                      |
-| Runtime             | Node.js 18+                    |
-| Database            | PostgreSQL                     |
-| ORM                 | Drizzle ORM                    |
-| Authentication      | Firebase Auth + Firebase Admin |
-| AI                  | Gemini 2.5 Flash               |
-| Validation          | Zod                            |
-| Incident Management | PagerDuty Events API v2        |
-| Collaboration       | Slack Incoming Webhooks        |
-| Ticketing           | Jira REST API v3               |
-| Source Control      | GitHub OAuth                   |
-| Package Managers    | npm / Bun                      |
-
-</div>
 
 <br/>
 
@@ -570,279 +255,90 @@ ember/
 
 ## <img src="https://img.shields.io/badge/-Quickstart%20Guide-8B5CF6?style=flat-square"/>
 
-### **1. Prerequisites**
+**1. Installation**
 
-Make sure you have:
-
-* Node.js 18+
-* PostgreSQL
-* Firebase project
-* Google Sign-In enabled in Firebase
-* Gemini API key
-
-<br/>
-
-### **2. Clone the Repository**
+Clone this repository and install the dependencies:
 
 ```bash
-git clone https://github.com/raahuldatta/Ember.git
-cd Ember
-npm install
+git clone https://github.com/raahuldatta/DNA-Sequencing-using-Machine-Learning-and-Deep-Learning-Algorithms.git
+cd DNA-Sequencing-using-Machine-Learning-and-Deep-Learning-Algorithms
+pip install -r requirements.txt
 ```
 
-<br/>
+**2. Train and Evaluate All Models**
 
-### **3. Configure Firebase**
-
-1. Create a Firebase project.
-2. Enable **Authentication → Sign-in method → Google**.
-3. Register a Web App.
-4. Copy the Firebase configuration into:
-
-```text
-firebase-applet-config.json
-```
-
-5. Configure Firebase Admin credentials for server-side ID-token verification.
-
-<br/>
-
-### **4. Configure PostgreSQL**
-
-Set the credentials required by Drizzle:
+Run the complete pipeline from the command line:
 
 ```bash
-export SQL_HOST=localhost
-export SQL_DB_NAME=ember
-export SQL_ADMIN_USER=postgres
-export SQL_ADMIN_PASSWORD=yourpassword
+python main.py
 ```
 
-Then push the schema:
+This will:
+- Perform 5-fold cross validation across all ML models.
+- Train 1D-CNN and DNA Transformer PyTorch models.
+- Execute zero-shot cross-species evaluations on Chimpanzee and Dog datasets.
+- Export all confusion matrix figures and the summary comparison chart (`model_comparison.png`).
+
+**3. Predict Gene Family for a DNA Sequence**
+
+Classify any custom raw DNA string in real time:
 
 ```bash
-npm run db:push
+python main.py --predict "ATGCCCCAACTAAATACTACCGTATGGCCCACCATAATTACCCCCATACTCCTTACACTATTCCTCATCACCCAACTAAA"
 ```
-
-The running application uses:
-
-```text
-DATABASE_URL
-```
-
-for its runtime PostgreSQL connection.
-
-<br/>
-
-### **5. Configure Environment Variables**
-
-Copy:
-
-```bash
-cp .env.example .env
-```
-
-Then configure the required variables.
 
 <details>
-<summary><b>View environment variables</b></summary>
-
+<summary><b>Example output</b></summary>
 <br/>
 
-| Variable                |       Required       | Purpose                            |
-| :---------------------- | :------------------: | :--------------------------------- |
-| `GEMINI_API_KEY`        |          Yes         | Gemini investigation and summaries |
-| `APP_URL`               | Yes for GitHub OAuth | OAuth redirect base URL            |
-| `DATABASE_URL`          |          Yes         | Runtime PostgreSQL connection      |
-| `PAGERDUTY_ROUTING_KEY` |       Optional       | PagerDuty triggering/resolution    |
-| `PAGERDUTY_API_KEY`     |       Optional       | Future PagerDuty API operations    |
-| `SLACK_WEBHOOK_URL`     |       Optional       | Slack notifications                |
-| `JIRA_DOMAIN`           |       Optional       | Jira Cloud domain                  |
-| `JIRA_EMAIL`            |       Optional       | Jira API authentication            |
-| `JIRA_API_TOKEN`        |       Optional       | Jira API token                     |
-| `JIRA_PROJECT_KEY`      |       Optional       | Jira destination project           |
-| `GITHUB_CLIENT_ID`      |       Optional       | GitHub OAuth                       |
-| `GITHUB_CLIENT_SECRET`  |       Optional       | GitHub OAuth                       |
-
-All integrations are optional. If an integration is not configured, Ember logs a warning and continues operating without it.
+```
+============================================================
+ DNA SEQUENCE PREDICTION RESULT
+============================================================
+Input Sequence: ATGCCCCAACTAAATACTACCGTATGGCCCACCATAATT... (Length: 80 bp)
+Predicted Class: 4
+Gene Family:     Synthase
+Confidence:      100.00%
+------------------------------------------------------------
+Class Probabilities:
+  Class 0 (G-protein coupled recept):   0.00%
+  Class 1 (Tyrosine kinase         ):   0.00%
+  Class 2 (Tyrosine phosphatase    ):   0.00%
+  Class 3 (Synthetase              ):   0.00%
+  Class 4 (Synthase                ): 100.00% ██████████████████████████████
+  Class 5 (Ion channel             ):   0.00%
+  Class 6 (Transcription factor    ):   0.00%
+============================================================
+```
 
 </details>
 
-<br/>
-
-### **6. Start the Application**
+**4. Run Test Suite**
 
 ```bash
-npm run dev
+python -m unittest discover -s tests -p "test_*.py"
 ```
 
-Open:
+**5. Jupyter Notebook**
 
-```text
-http://localhost:3000
-```
-
-Sign in with Google and access the incident dashboard.
-
-If the database is empty, use **Seed Demo Data** or:
+Launch Jupyter and open [`DNA.ipynb`](DNA.ipynb) for step-by-step interactive exploration:
 
 ```bash
-POST /api/seed
+jupyter notebook DNA.ipynb
 ```
-
-<br/>
-
-### **7. Available Scripts**
-
-| Command           | Purpose                                |
-| :---------------- | :------------------------------------- |
-| `npm run dev`     | Start development server with Vite HMR |
-| `npm run build`   | Build frontend and production server   |
-| `npm start`       | Start production build                 |
-| `npm run preview` | Preview frontend build                 |
-| `npm run clean`   | Remove build artifacts                 |
-| `npm run lint`    | Type-check the project                 |
-| `npm run db:push` | Push Drizzle schema to PostgreSQL      |
 
 <br/>
 
 ---
 
-## <img src="https://img.shields.io/badge/-Integrations%20Setup-8B5CF6?style=flat-square"/>
+## <img src="https://img.shields.io/badge/-License-8B5CF6?style=flat-square"/>
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
+<br/>
 
 <div align="center">
 
-| Integration   | Purpose                        | Configuration                      |
-| :------------ | :----------------------------- | :--------------------------------- |
-| **PagerDuty** | Sev1 triggering and resolution | `PAGERDUTY_ROUTING_KEY`            |
-| **Slack**     | Incident notifications         | `SLACK_WEBHOOK_URL`                |
-| **Jira**      | Incident ticket creation       | Jira domain, email, token, project |
-| **GitHub**    | OAuth and engineering context  | GitHub OAuth client credentials    |
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=20,11,6&height=120&section=footer" width="100%"/>
 
 </div>
-
-### PagerDuty
-
-Create an Events API v2 integration on the desired PagerDuty service and configure:
-
-```text
-PAGERDUTY_ROUTING_KEY
-```
-
-### Slack
-
-Create an Incoming Webhook in your Slack workspace and configure:
-
-```text
-SLACK_WEBHOOK_URL
-```
-
-### Jira
-
-Configure:
-
-```text
-JIRA_DOMAIN
-JIRA_EMAIL
-JIRA_API_TOKEN
-JIRA_PROJECT_KEY
-```
-
-### GitHub
-
-Create a GitHub OAuth application and set:
-
-```text
-${APP_URL}/auth/github/callback
-```
-
-as the OAuth callback URL.
-
-Configure:
-
-```text
-GITHUB_CLIENT_ID
-GITHUB_CLIENT_SECRET
-```
-
-<br/>
-
----
-
-## <img src="https://img.shields.io/badge/-Deployment-8B5CF6?style=flat-square"/>
-
-Ember can run as a single Node.js service.
-
-Build the production application:
-
-```bash
-npm run build
-```
-
-Start it with:
-
-```bash
-npm start
-```
-
-The production bundle creates:
-
-```text
-dist/server.cjs
-```
-
-The Express server serves both:
-
-* REST API
-* Built React SPA
-
-This means Ember does not require separate frontend and backend deployments.
-
-The deployment environment must provide:
-
-```text
-DATABASE_URL
-GEMINI_API_KEY
-Firebase Admin credentials
-```
-
-along with any optional integration credentials.
-
-<br/>
-
----
-
-## <img src="https://img.shields.io/badge/-Known%20Limitations%20%2F%20Roadmap-8B5CF6?style=flat-square"/>
-
-### Current Limitations
-
-* **Simulated evidence collection** — the current investigation flow uses sample log, trace, and deployment strings instead of querying a live observability platform.
-* **LangGraph not yet wired** — LangGraph dependencies are installed, but the current investigation flow uses a direct Gemini call.
-* **In-memory presence tracking** — viewer presence is stored in a server-side `Map` and resets after a restart.
-* **No automatic remediation execution** — approved remediation payloads are not automatically executed.
-* **Single-server presence model** — the current presence implementation would need shared state for multi-instance deployments.
-
-### Roadmap
-
-```text
-┌───────────────────────────────────────────────┐
-│                 Ember Roadmap                 │
-├───────────────────────────────────────────────┤
-│                                               │
-│  Live Observability                           │
-│  ├── Logs                                     │
-│  ├── Metrics                                  │
-│  └── Distributed Traces                       │
-│                                               │
-│  Multi-Step AI Investigation                  │
-│  ├── LangGraph investigation graph            │
-│  ├── Evidence collection agents               │
-│  └── Confidence-aware reasoning               │
-│                                               │
-│  Engineering Context                          │
-│  ├── GitHub commits                           │
-│  ├── Pull requests                            │
-│  └── Deployment history                       │
-│                                               │
-│  Production Scale
-```
